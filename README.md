@@ -13,27 +13,8 @@ This is a simple e-commerce game store built using **Express.js** and integrated
 - dotenv
 - CSS (custom)
 
-## Setup Instructions
 
-1. **Clone the repository:**
 
-````bash
-git clone https://github.com/YourUsername/StreamClone.git
-cd StreamClone
-
-npm install
-
-STRIPE_SECRET_KEY=your_secret_key
-STRIPE_PUBLISHABLE_KEY=your_publishable_key
-
-node app.js
----
-
-### 4. **In-Class Exercise**
-This section is *crucial for the marks*. Provide simple, step-by-step tasks your classmates can follow:
-
-```markdown
-## In-Class Exercise
 
 Follow these steps to complete the exercise:
 
