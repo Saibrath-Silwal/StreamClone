@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Clone Game Store</title>
+<link rel="stylesheet" href="/css/style.css">   </head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🎮 Stream Clone</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/cart">Cart</a></li>
+      <li><a href="/checkout">Checkout</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Explore Top Games</h1>
+    <div class="game-grid">
+      <% games.forEach(game => { %>
+        <div class="card">
+          <img src="<%= game.image %>" alt="<%= game.title %> cover art" />
+          <h2><%= game.title %></h2>
+          <p class="price">$<%= (game.price / 100).toFixed(2) %></p>
+          <a href="/game/<%= game.id %>" class="btn">Buy Now</a>
+        </div>
+      <% }) %>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> Stream Clone Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

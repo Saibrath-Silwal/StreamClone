@@ -1,0 +1,16 @@
+<h1><%= game.title %></h1>
+<img src="<%= game.image %>" width="300" />
+<p>Price: $<%= (game.price / 100).toFixed(2) %></p>
+<button id="checkout">Buy Now</button>
+
+<script>
+  document.getElementById("checkout").onclick = async () => {
+    const res = await fetch('/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: '<%= game.id %>' })
+    });
+    const data = await res.json();
+    window.location = data.url;
+  };
+</script>
