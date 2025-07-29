@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stream Clone - Cart</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="homepage">
+
+  <nav class="navbar">
+    <div class="logo">🎮 Stream Clone</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/cart">Cart</a></li>
+      <li><a href="/checkout">Checkout</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Your Shopping Cart</h1>
+
+    <% if (cart && cart.length > 0) { %>
+      <div class="cart-items">
+        <% let total = 0; %>
+        <% cart.forEach(item => { 
+             total += item.price;
+        %>
+          <div class="cart-item">
+            <img src="<%= item.image %>" alt="<%= item.title %> cover" />
+            <div class="cart-details">
+              <h2><%= item.title %></h2>
+              <p>$<%= (item.price / 100).toFixed(2) %></p>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+
+      <div class="cart-total">
+        <h2>Total: $<%= (total / 100).toFixed(2) %></h2>
+        <a href="/checkout" class="btn">Proceed to Checkout</a>
+      </div>
+    <% } else { %>
+      <p>Your cart is empty.</p>
+      <a href="/" class="btn">Browse Games</a>
+    <% } %>
+  </main>
+
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> Stream Clone Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
