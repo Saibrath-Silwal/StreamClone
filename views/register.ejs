@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Stream Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🎮 Stream Clone</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/cart">Cart</a></li>
+      <li><a href="/checkout">Checkout</a></li>
+      <li><a href="/admin">Admin</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="login-container">
+    <h1>Create an Account</h1>
+
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+
+    <form action="/register" method="POST" class="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" name="confirm" required>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <p>Already have an account? <a href="/login">Login here</a>.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <%= new Date().getFullYear() %> Stream Clone Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
