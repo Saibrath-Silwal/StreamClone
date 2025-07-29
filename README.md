@@ -2,7 +2,7 @@
 
 # Stream Clone Game Store with Stripe API
 
-This is a simple e-commerce game store built using **Express.js** and integrated with **Stripe API** for payment processing. It mimics a "Stream" platform where users can browse and purchase games.
+This is a simple e-commerce game store built using **Express.js** and integrated with **Stripe API** for payment processing. It mimics a "Stream" platform where users can browse and purchase games.   
 
 ## Technologies Used
 
@@ -13,27 +13,8 @@ This is a simple e-commerce game store built using **Express.js** and integrated
 - dotenv
 - CSS (custom)
 
-## Setup Instructions
 
-1. **Clone the repository:**
 
-````bash
-git clone https://github.com/YourUsername/StreamClone.git
-cd StreamClone
-
-npm install
-
-STRIPE_SECRET_KEY=your_secret_key
-STRIPE_PUBLISHABLE_KEY=your_publishable_key
-
-node app.js
----
-
-### 4. **In-Class Exercise**
-This section is *crucial for the marks*. Provide simple, step-by-step tasks your classmates can follow:
-
-```markdown
-## In-Class Exercise
 
 Follow these steps to complete the exercise:
 
@@ -73,7 +54,7 @@ stream-clone/
 ## Team Members
 
 - Saibrath Silwal — Backend + Stripe Integration
-- Member 2 — Frontend and EJS
-- Member 3 — Deployment and README
-- Member 4 — Slides + Presentation Coordination
+- Oman Kunwar —  Backend + Stripe Integration
+- Diwash Niroula — Frontend and EJS, Slides
+- Manoj Khatri Chettri — Frontend and EJS, Slides
 ````
