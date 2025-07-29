@@ -12,6 +12,15 @@ body {
   line-height: 1.6;
 }
 
+/* Homepage-specific background image */
+.homepage {
+  background-image: url('/images/background.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* Navbar */
 .navbar {
   background-color: #1e3a8a;
@@ -49,6 +58,8 @@ main {
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.85); /* Optional overlay for readability */
+  border-radius: 16px;
 }
 
 main h1 {
@@ -120,5 +131,4 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 3rem;
-    position: botton;
 }
