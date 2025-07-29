@@ -54,7 +54,7 @@ stream-clone/
 ## Team Members
 
 - Saibrath Silwal — Backend + Stripe Integration
-- Member 2 — Frontend and EJS
-- Member 3 — Deployment and README
-- Member 4 — Slides + Presentation Coordination
+- Oman Kunwar —  Backend + Stripe Integration
+- Diwash Niroula — Frontend and EJS, Slides
+- Manoj Khatri Chettri — Frontend and EJS, Slides
 ````
