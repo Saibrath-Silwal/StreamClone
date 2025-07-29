@@ -1,10 +1,12 @@
+<!-- views/login.ejs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stream Clone Game Store</title>
-<link rel="stylesheet" href="/css/style.css">   </head>
+  <title>Login - Stream Clone</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
 <body>
 
   <nav class="navbar">
@@ -20,18 +22,22 @@
     </ul>
   </nav>
 
-  <main>
-    <h1>Explore Top Games</h1>
-    <div class="game-grid">
-      <% games.forEach(game => { %>
-        <div class="card">
-          <img src="<%= game.image %>" alt="<%= game.title %> cover art" />
-          <h2><%= game.title %></h2>
-          <p class="price">$<%= (game.price / 100).toFixed(2) %></p>
-          <a href="/game/<%= game.id %>" class="btn">Buy Now</a>
-        </div>
-      <% }) %>
-    </div>
+  <main class="login-container">
+    <h1>Login</h1>
+
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+
+    <form action="/login" method="POST" class="login-form">
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
   </main>
 
   <footer>
