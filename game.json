@@ -1,5 +1,6 @@
 [
   {
+    
     "id": "game1",
     "title": "Far Cry",
     "price": 1499,
@@ -8,14 +9,14 @@
   {
     "id": "game2",
     "title": "Minecraft",
-    "price": 999,
+    "price": 1299,
     "image": "/images/minecraft.jpg"
   },
   {
     "id": "game3",
     "title": "Cyberpunk 2077",
     "price": 1299,
-    "image": "/images/cyberpunk.jpg"
+    "image": "/images/CyberPunk.jpg"
   },
   {
     "id": "game4",
@@ -27,12 +28,24 @@
     "id": "game5",
     "title": "Assassin's Creed",
     "price": 1599,
-    "image": "/images/assassinsCreed.jpg"
+    "image": "/images/AssassinsCreed.jpg"
   },
   {
     "id": "game6",
     "title": "The Witcher 3",
     "price": 1199,
-    "image": "/images/theWitcher3.jpg"
+    "image": "/images/Witcher.jpg"
+  },
+  {
+    "id": "game7",
+    "title": "Pubg",
+    "price": 1199,
+    "image": "/images/pubg.jpeg"
+  },
+  {
+    "id": "game8",
+    "title": "GTA V",
+    "price": 1199,
+    "image": "/images/GTAV.jpg"
   }
 ]
